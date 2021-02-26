@@ -44,7 +44,7 @@ I would like my meeting room to have a name
 
 
 
-As an office manager
+# As an office manager
 So that staff can coordinate meetings
 I would like to add a meeting room to the office
 

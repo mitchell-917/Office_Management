@@ -2,9 +2,8 @@
 
 class MeetingRoom {
 
-  constructor(room_name) {
+  constructor() {
     this.is_available = true;
-    this.room_name = room_name;
   }
 
   isRoomAvailable(){
@@ -21,14 +20,22 @@ class MeetingRoom {
   leaveMeeting(){
     return this.is_available = true;
   }
-  
-  getRoomName(){
-    return this.room_name;
+
+}
+
+class Office {
+
+  constructor(){
+    this.meetingRooms = [];
   }
 
-  
+  getRoomNames(){
+    return this.meetingRooms;
+  }
 
-
+  addMeetingRoom(meetingRoom){
+    this.meetingRooms.push(meetingRoom);
+  }
 }
 
 
