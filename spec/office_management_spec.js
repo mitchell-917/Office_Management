@@ -5,7 +5,7 @@
     let room_001;
 
       beforeEach(function(){
-       room_001 = new MeetingRoom();
+       room_001 = new MeetingRoom('Stamford Bridge');
         
       });
 
@@ -37,6 +37,12 @@
       it('Infoms a user the room is not available', function(){
         room_001.enter_meeting();
         expect(room_001.enter_meeting()).toEqual("Room is not available");
+      });
+    });
+
+    describe('In order to distinguish between meeting rooms',function(){
+      it('A meeting room must have a number', function(){
+        expect(room_001.get_room_name()).toEqual('Stamford Bridge')
       });
     });
 });  

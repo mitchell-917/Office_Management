@@ -2,8 +2,9 @@
 
 class MeetingRoom {
 
-  constructor(){
+  constructor(room_name) {
     this.is_available = true;
+    this.room_name = room_name;
   }
 
   is_room_available(){
@@ -21,6 +22,9 @@ class MeetingRoom {
     return this.is_available = true;
   }
   
+  get_room_name(){
+    return this.room_name;
+  }
 }
 
 
