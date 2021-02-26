@@ -7,22 +7,22 @@ class MeetingRoom {
     this.room_name = room_name;
   }
 
-  is_room_available(){
+  isRoomAvailable(){
     return this.is_available === true;
   }
   
-  enter_meeting(){
+  enterMeeting(){
     if(this.is_available === false){
       return 'Room is not available';
     }
     return this.is_available = false;
   }
 
-  leave_meeting(){
+  leaveMeeting(){
     return this.is_available = true;
   }
   
-  get_room_name(){
+  getRoomName(){
     return this.room_name;
   }
 }
