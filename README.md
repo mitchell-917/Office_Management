@@ -37,17 +37,17 @@ So that I can avoid interrupting a meeting
 I would like an error if I try to use a room that has already been entered
 
 
-```
-As a staff member
+
+# As a staff member
 In order to distinguish between meeting rooms
 I would like my meeting room to have a name
-```
 
-```
+
+
 As an office manager
 So that staff can coordinate meetings
 I would like to add a meeting room to the office
-```
+
 
 ```
 As an office manager
