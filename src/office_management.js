@@ -2,8 +2,9 @@
 
 class MeetingRoom {
 
-  constructor() {
+  constructor(name) {
     this.is_available = true;
+    this.name = name;
   }
 
   isRoomAvailable(){
@@ -27,14 +28,24 @@ class Office {
 
   constructor(){
     this.meetingRooms = [];
-  }
-
-  getRoomNames(){
-    return this.meetingRooms;
+    this.availableRooms = [];
   }
 
   addMeetingRoom(meetingRoom){
     this.meetingRooms.push(meetingRoom);
+  }
+    
+  listMeetingRooms(){
+    return this.meetingRooms
+  }
+    
+  listAvailableRooms(){
+    for (let i = 0; i < this.meetingRooms.length; i++){
+      if(this.meetingRooms[i].is_available === true){
+       this.availableRooms.push(this.meetingRooms[i]);
+      }
+    }
+    return this.availableRooms
   }
 }
 

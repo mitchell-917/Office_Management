@@ -49,17 +49,16 @@ So that staff can coordinate meetings
 I would like to add a meeting room to the office
 
 
-```
-As an office manager
+# As an office manager
 So that I can manage meeting rooms
 I would like to list all the meeting rooms in the office
-```
 
-```
+
+
 As a staff member
 So that I can see where to have my meeting
 I would like to be able to see a list of available rooms in the office
-```
+
 
 #### Stretch user stories
 
